@@ -6,6 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/style.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
@@ -15,13 +19,11 @@
   <main class="container">
     <h1>SPLITTER</h1>
     <section class="bill_amount">
-
       <h4>Bill</h4>
-      <div></div>
-
+      <form action="">Enter Amount...</form>
     </section>
-    <section class="tip_amount">
 
+    <section class="tip_amount">
       <h4>Select Tip %</h4>
       <ul class="percentage">
         <li class="">5%</li>
@@ -31,30 +33,25 @@
         <li class="">50%</li>
         <li class="">Custom</li>
       </ul>
-
     </section>
+
     <section class="num_people">
-
       <h4>Number of People</h4>
-      <div></div>
-
+      <form action="">Number of people...</form>
     </section>
+    
     <section class="tip_result">
-
       <div>
         <h4>Tip Amount</h4>
         <p>/ person</p>
       </div>
-      <div></div>
-
+      <form action="">$</form>
       <div>
         <h4>Total</h4>
         <p>/ person</p>
       </div>
-      <div></div>
-
+      <form action="">$</form>
       <button>Reset</button>
-      
     </section>
   </main>
   
@@ -62,5 +59,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
