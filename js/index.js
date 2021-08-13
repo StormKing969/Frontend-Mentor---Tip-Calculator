@@ -6,12 +6,17 @@ var tipType = document.querySelectorAll(".tip_percentage").length;
 for (var i = 0; i < tipType; i++) {
     document.querySelectorAll(".tip_percentage")[i].addEventListener("click", function() {
         var valueInnerHTML = parseInt(this.innerHTML.split("%", 1)[0]);
+        // console.log(valueInnerHTML);
+
+        changeButtonColor();
 
         var bill = Number(totalBillAmount());
         // console.log(bill);
         
         var people = totalNumberOfPeople();
         // console.log(people);
+
+        
 
         var combinedTip = calculateTotalTip(valueInnerHTML, bill)
         // console.log(combinedTip);
@@ -28,22 +33,24 @@ for (var i = 0; i < tipType; i++) {
 }
 
 // ----- Get user's bill input -----
+
 function totalBillAmount() {
     var billForm = document.getElementById("bill-form");
     var totalAmount = "";
-    for (var i = 0; i < billForm.length; i++) {
-        totalAmount += billForm.elements[i].value;
-    }
+
+    totalAmount = billForm.elements[0].value;
+
     return totalAmount;
 }
 
 // ----- Get total amount of people -----
+
 function totalNumberOfPeople() {
     var numPeopleForm = document.getElementById("num-people-form");
     var totalPeople = "";
-    for (var i = 0; i < numPeopleForm.length; i++) {
-        totalPeople += numPeopleForm.elements[i].value;
-    }
+    
+    totalPeople = numPeopleForm.elements[0].value;
+
     return totalPeople;
 }
 
@@ -63,4 +70,29 @@ function calculateTip(totalTip, people) {
 
 function totalAmountEach(totalTip, amount, people) {
     return (totalTip + amount) / people;
+}
+
+// ----- Resetting everything -----
+
+document.querySelector(".reset_button").addEventListener("click", function() {
+    // document.getElementById("bill-form").elements[0].value = "0";
+    // document.getElementById("num-people-form").elements[0].value = "0";
+    document.getElementById("bill-form").setAttribute("placeholder", "0");
+    resetButtonColor();
+})
+
+function changeButtonColor() {
+    // var addLocation = document.getElementById("reset-button");
+    // var addNewClass = addLocation.classList.add("ready_reset_button");
+    // console.log(addLocation);
+    // console.log(addNewClass);
+    document.getElementById("reset-button").classList.add("ready_reset_button");
+}
+
+function resetButtonColor() {
+    // var removeLocation = document.getElementById("reset-button");
+    // var removeClass = removeLocation.classList.remove("ready_reset_button");
+    // console.log(addLocation);
+    // console.log(addNewClass);
+    document.getElementById("reset-button").classList.remove("ready_reset_button");
 }

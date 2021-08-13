@@ -127,6 +127,10 @@ header {
     font-weight: 700;
 }
 
+.container .tip_result .ready_reset_button {
+    background-color: hsla(185, 62%, 51%, 0.76);
+}
+
 .container .tip_result .row .column h1 {
     text-align: center;
     color: var(--dark-grayish-cyan-1);
