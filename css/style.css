@@ -42,7 +42,7 @@ header {
     border-radius: 15px;
 }
 
-.container .bill_amount .bill_form input[type=number] {
+.container .bill_amount #bill-form input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0 20px;
@@ -81,7 +81,7 @@ header {
     color: var(--dark-grayish-cyan-2);
 }
 
-.container .num_people .num_people_form input[type=number] {
+.container .num_people #num-people-form input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0 20px;
@@ -125,6 +125,11 @@ header {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
+}
+
+.container .tip_result .row .column h1 {
+    text-align: center;
+    color: var(--dark-grayish-cyan-1);
 }
 
 .attribution { 

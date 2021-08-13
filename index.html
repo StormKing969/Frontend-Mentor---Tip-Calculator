@@ -24,24 +24,25 @@
     
     <section class="bill_amount">
       <h3>Bill</h3>
-      <form class="bill_form">
-        <input type="number" id="total_bill" name="total_bill" value="" required>
+      <form id="bill-form">
+        <input type="number" name="total_bill" value="" placeholder="0" required>
       </form>
+      <p id="demo"></p>
     </section>
 
     <section class="tip_amount">
       <h3>Select Tip %</h3>
       <div class="percentage">
         <div class="row">
-          <div class="column">5%</div>
-          <div class="column">10%</div>
+          <div class="column tip_percentage">5%</div>
+          <div class="column tip_percentage">10%</div>
         </div>
         <div class="row">
-          <div class="column">15%</div>
-          <div class="column">25%</div>
+          <div class="column tip_percentage">15%</div>
+          <div class="column tip_percentage">25%</div>
         </div>
         <div class="row">
-          <div class="column">50%</div>
+          <div class="column tip_percentage">50%</div>
           <div class="column">Custom</div>
         </div>
       </div>
@@ -49,8 +50,8 @@
 
     <section class="num_people">
       <h3>Number of People</h3>
-      <form class="num_people_form">
-        <input type="number" id="total_num" name="total_num" required>
+      <form id="num-people-form">
+        <input type="number" name="total_num" placeholder="0" required>
       </form>
     </section>
 
@@ -61,7 +62,7 @@
           <p>/ person</p>
         </div>
         <div class="column">
-          <form id="total_tip_per_person" name="total_tip_per_person"></form>
+          <h1 id="tip-amount"></h1>
         </div>
       </div>
       <div class="row">
@@ -70,7 +71,7 @@
           <p>/ person</p>
         </div>
         <div class="column">
-          <form id="total_tip" name="total_tip"></form>
+          <h1 id="total"></h1>
         </div>
       </div>
       <button>Reset</button>
@@ -82,7 +83,7 @@
     Coded by <a href="#">Sajana Wijesinghe</a>.
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
   <script src="./js/index.js"></script>
 </body>
 </html>
