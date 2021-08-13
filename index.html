@@ -16,48 +16,70 @@
 
 </head>
 <body>
+  <header>
+    <h1>SPLI</h1>
+    <h1>TTER</h1>
+  </header>
   <main class="container">
-    <h1>SPLITTER</h1>
+    
     <section class="bill_amount">
-      <h4>Bill</h4>
-      <form action="">Enter Amount...</form>
+      <h3>Bill</h3>
+      <form class="bill_form">
+        <input type="number" id="total_bill" name="total_bill" value="" required>
+      </form>
     </section>
 
     <section class="tip_amount">
-      <h4>Select Tip %</h4>
-      <ul class="percentage">
-        <li class="">5%</li>
-        <li class="">10%</li>
-        <li class="">15%</li>
-        <li class="">25%</li>
-        <li class="">50%</li>
-        <li class="">Custom</li>
-      </ul>
+      <h3>Select Tip %</h3>
+      <div class="percentage">
+        <div class="row">
+          <div class="column">5%</div>
+          <div class="column">10%</div>
+        </div>
+        <div class="row">
+          <div class="column">15%</div>
+          <div class="column">25%</div>
+        </div>
+        <div class="row">
+          <div class="column">50%</div>
+          <div class="column">Custom</div>
+        </div>
+      </div>
     </section>
 
     <section class="num_people">
-      <h4>Number of People</h4>
-      <form action="">Number of people...</form>
+      <h3>Number of People</h3>
+      <form class="num_people_form">
+        <input type="number" id="total_num" name="total_num" required>
+      </form>
     </section>
-    
+
     <section class="tip_result">
-      <div>
-        <h4>Tip Amount</h4>
-        <p>/ person</p>
+      <div class="row">
+        <div class="column">
+          <h3>Tip Amount</h3>
+          <p>/ person</p>
+        </div>
+        <div class="column">
+          <form id="total_tip_per_person" name="total_tip_per_person"></form>
+        </div>
       </div>
-      <form action="">$</form>
-      <div>
-        <h4>Total</h4>
-        <p>/ person</p>
+      <div class="row">
+        <div class="column">
+          <h3>Total</h3>
+          <p>/ person</p>
+        </div>
+        <div class="column">
+          <form id="total_tip" name="total_tip"></form>
+        </div>
       </div>
-      <form action="">$</form>
       <button>Reset</button>
     </section>
   </main>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Sajana Wijesinghe</a>.
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

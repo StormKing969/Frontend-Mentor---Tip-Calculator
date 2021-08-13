@@ -1,9 +1,10 @@
-root {
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
     --very-dark-cyan: hsl(183, 100%, 15%);
-    --dark-grayish-cyan: hsl(186, 14%, 43%);
-    --dark-grayish-cyan: hsl(184, 14%, 56%);
-    --light-grayish-cyan: hsl(185, 41%, 84%);
-    --light-grayish-cyan: hsl(189, 41%, 97%);
+    --dark-grayish-cyan-1: hsla(185, 54%, 65%, 0.76);
+    --dark-grayish-cyan-2: hsl(186, 44%, 31%);
+    --light-grayish-cyan-1: hsl(185, 41%, 84%);
+    --light-grayish-cyan-2: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
 }
 
@@ -15,10 +16,121 @@ root {
 
 body {
     font-family: 'Space Mono', monospace;
+    background-color: var(--dark-grayish-cyan-1);
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 10px;
+    color: var(--dark-grayish-cyan-2);
+}
+
+.container {
+    width: 375px;
+    margin: 50px auto 0;
+    padding: 20px;
+    text-align: left;
+    background-color: var(--white);
+    color: var(--dark-grayish-cyan-2);
+    border-radius: 15px;
+}
+
+.container .bill_amount .bill_form input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 0;
+    background-color: var(--light-grayish-cyan-2);
+    font-size: 24px;
+    text-align: right;
+    font-weight: 700;
+    color: var(--dark-grayish-cyan-2);
+    background-image: url("../images/icon-dollar.svg");
+    background-position: 10px 18px; 
+    background-repeat: no-repeat;
+}
+
+.row {
+    display: flex;
+}
+
+.row .column {
+    columns: 50%;
+    width: 50%;
+    padding: 5px 20px;
+    margin: 8px 10px 20px;
+    background-color: var(--dark-grayish-cyan-2);
+    color: var(--white);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.container .tip_amount .percentage .row .column:hover {
+    background-color: var(--dark-grayish-cyan-1);
+    color: var(--dark-grayish-cyan-2);
+}
+
+.container .num_people .num_people_form input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 0;
+    background-color: var(--light-grayish-cyan-2);
+    font-size: 24px;
+    text-align: right;
+    font-weight: 700;
+    color: var(--dark-grayish-cyan-2);
+    background-image: url("../images/icon-person.svg");
+    background-position: 10px 18px; 
+    background-repeat: no-repeat;
+}
+
+.container .tip_result {
+    background-color: var(--dark-grayish-cyan-2);
+    color: var(--white);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.container .tip_result .row .column {
+    font-size: 12px;
+    text-align: left;
+    padding: 0;
+    margin: 10px 0px;
+}
+
+.container .tip_result button {
+    width: 100%;
+    background-color: var(--dark-grayish-cyan-1);
+    color: var(--dark-grayish-cyan-2);
+    padding: 10px;
+    margin: 20px 0 10px;
+    border-radius: 5px;
+    border-width: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .attribution { 
-    font-size: 11px; text-align: center;
+    margin-top: 30px;
+    font-size: 11px; 
+    text-align: center;
 }
 
 .attribution a { 
