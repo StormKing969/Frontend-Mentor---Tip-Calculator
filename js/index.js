@@ -75,9 +75,8 @@ function totalAmountEach(totalTip, amount, people) {
 // ----- Resetting everything -----
 
 document.querySelector(".reset_button").addEventListener("click", function() {
-    // document.getElementById("bill-form").elements[0].value = "0";
-    // document.getElementById("num-people-form").elements[0].value = "0";
-    document.getElementById("bill-form").setAttribute("placeholder", "0");
+    document.getElementById("bill-form").elements[0].value = "";
+    document.getElementById("num-people-form").elements[0].value = "";
     resetButtonColor();
 })
 
