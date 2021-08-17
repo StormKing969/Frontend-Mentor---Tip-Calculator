@@ -136,6 +136,10 @@ header {
     color: var(--dark-grayish-cyan-2);
 }
 
+.custom_form_hover ::placeholder {
+    background-color: var(--dark-grayish-cyan-1);
+    color: var(--dark-grayish-cyan-2);
+}
 
 /* =========== Number Of People Input Section =========== */
 
