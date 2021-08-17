@@ -136,3 +136,29 @@ function resetButtonColor() {
     // console.log(addNewClass);
     document.getElementById("reset-button").classList.remove("ready_reset_button");
 }
+
+// ----- Hover Function -----
+
+function removeColor() {
+    document.getElementById("custom-tip-percentage").classList.remove("custom_form_hover");
+}
+
+function addColor() {
+    document.getElementById("custom-tip-percentage").classList.add("custom_form_hover");
+}
+
+// ----- Custom Percentage Color Fix -----
+
+var cursorPointer = document.querySelector(".custom_tip_percentage")
+
+cursorPointer.addEventListener("mouseenter", addColor);
+
+cursorPointer.addEventListener("mouseleave", removeColor);
+
+document.getElementById("custom-tip-percentage").addEventListener("mouseenter", function() {
+    document.getElementById("custom-tip-percentage").classList.add("custom_form_hover");
+});
+
+document.getElementById("custom-tip-percentage").addEventListener("mouseleave", function() {
+    document.getElementById("custom-tip-percentage").classList.add("custom_form_hover");
+});
