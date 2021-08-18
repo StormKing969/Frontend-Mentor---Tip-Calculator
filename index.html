@@ -21,43 +21,44 @@
     <h1>TTER</h1>
   </header>
   <main class="container">
-    
-    <section class="bill_amount">
-      <h3>Bill</h3>
-      <form id="bill-form">
-        <input type="number" name="total_bill" placeholder="0" required="required">
-      </form>
-      <p id="demo"></p>
-    </section>
+    <div class="col1">
+      <section class="bill_amount">
+        <h3>Bill</h3>
+        <form id="bill-form">
+          <input type="number" name="total_bill" placeholder="0" required="required">
+        </form>
+        <p id="demo"></p>
+      </section>
 
-    <section class="tip_amount">
-      <h3>Select Tip %</h3>
-      <div class="percentage">
-        <div class="row">
-          <div class="column tip_percentage">5%</div>
-          <div class="column tip_percentage">10%</div>
-        </div>
-        <div class="row">
-          <div class="column tip_percentage">15%</div>
-          <div class="column tip_percentage">25%</div>
-        </div>
-        <div class="row">
-          <div class="column tip_percentage">50%</div>
-          <div class="column custom_tip_percentage">
-            <form id="custom-tip-percentage">
-              <input type="number" name="custom_tip" placeholder="CUSTOM" required="required">
-            </form>
+      <section class="tip_amount">
+        <h3>Select Tip %</h3>
+        <div class="percentage">
+          <div class="row">
+            <div class="column tip_percentage">5%</div>
+            <div class="column tip_percentage">10%</div>
+          </div>
+          <div class="row">
+            <div class="column tip_percentage">15%</div>
+            <div class="column tip_percentage">25%</div>
+          </div>
+          <div class="row">
+            <div class="column tip_percentage">50%</div>
+            <div class="column custom_tip_percentage">
+              <form id="custom-tip-percentage">
+                <input type="number" name="custom_tip" placeholder="CUSTOM" required="required">
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="num_people">
-      <h3>Number of People</h3>
-      <form id="num-people-form">
-        <input type="number" name="total_num" placeholder="0" required="required">
-      </form>
-    </section>
+      <section class="num_people">
+        <h3>Number of People</h3>
+        <form id="num-people-form">
+          <input type="number" name="total_num" placeholder="0" required="required">
+        </form>
+      </section>
+    </div>
 
     <section class="tip_result">
       <div class="row">

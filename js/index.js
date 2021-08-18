@@ -42,6 +42,8 @@ for (var i = 0; i < tipType; i++) {
         var valueInnerHTML = parseInt(this.innerHTML.split("%", 1)[0]);
         // console.log(valueInnerHTML);
 
+        // this.classList.add("color_change_tip_section");
+
         changeButtonColor();
 
         var bill = Number(totalBillAmount());
@@ -65,8 +67,8 @@ for (var i = 0; i < tipType; i++) {
         }
         // console.log(eachTotal);
 
-        document.getElementById("tip-amount").innerHTML = eachTip;
-        document.getElementById("total").innerHTML = eachTotal;
+        document.getElementById("tip-amount").innerHTML ="$" + eachTip;
+        document.getElementById("total").innerHTML = "$" + eachTotal;
     });
 }
 

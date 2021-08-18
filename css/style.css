@@ -60,7 +60,7 @@ header {
 
 /* =========== Bill Amount Section =========== */
 
-.container .bill_amount #bill-form input[type=number] {
+.container .col1 .bill_amount #bill-form input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0 20px;
@@ -96,14 +96,18 @@ header {
     font-weight: 700;
 }
 
-.container .tip_amount .percentage .row .column:hover {
+.container .col1 .tip_amount .percentage .row .column:hover {
     background-color: var(--dark-grayish-cyan-1);
     color: var(--dark-grayish-cyan-2);
 }
 
+.container .col1 .tip_amount .percentage .row .column .color_change_tip_section {
+    background-color: black;
+}
+
 /* =========== Custom Tip Percentage Section =========== */
 
-.container .tip_amount .percentage .row .column #custom-tip-percentage input[type=number] {
+.container .col1 .tip_amount .percentage .row .column #custom-tip-percentage input[type=number] {
     width: 100%;
     font-size: 24px;
     text-align: center;
@@ -113,25 +117,25 @@ header {
     border-width: 0;
 }
 
-.container .tip_amount .percentage .row .column #custom-tip-percentage input[type=number]:hover {
+.container .col1 .tip_amount .percentage .row .column #custom-tip-percentage input[type=number]:hover {
     background-color: var(--dark-grayish-cyan-1);
     color: var(--dark-grayish-cyan-2);
 }
 
-.container .tip_amount .percentage .row .column #custom-tip-percentage ::placeholder {
+.container .col1 .tip_amount .percentage .row .column #custom-tip-percentage ::placeholder {
     color: var(--white);
 }
 
-.container .tip_amount .percentage .row .column #custom-tip-percentage ::placeholder :hover {
+.container .col1 .tip_amount .percentage .row .column #custom-tip-percentage ::placeholder :hover {
     background-color: var(--dark-grayish-cyan-1);
     color: var(--dark-grayish-cyan-2);
 }
 
-.container .tip_amount .percentage .row .column #custom-tip-percentage ::value {
+.container .col1 .tip_amount .percentage .row .column #custom-tip-percentage ::value {
     color: var(--white);
 }
 
-.container .tip_amount .percentage .row .column #custom-tip-percentage ::value :hover {
+.container .col1 .tip_amount .percentage .row .column #custom-tip-percentage ::value :hover {
     background-color: var(--dark-grayish-cyan-1);
     color: var(--dark-grayish-cyan-2);
 }
@@ -143,7 +147,7 @@ header {
 
 /* =========== Number Of People Input Section =========== */
 
-.container .num_people #num-people-form input[type=number] {
+.container .col1 .num_people #num-people-form input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0 20px;
@@ -210,4 +214,30 @@ header {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 900px) {
+    .container {
+        display: flex;
+        width: 950px;
+        height: 100%;
+    }
+
+    .col1 {
+        width: 50%;
+        margin: 0 20px;
+    }
+
+    .tip_result {
+        width: 50%;
+        margin: 0 20px;
+    }
+
+    .container .tip_result {
+        padding: 50px;
+    }
+
+    #reset-button {
+        margin-top: 18vh;
+    }
 }
